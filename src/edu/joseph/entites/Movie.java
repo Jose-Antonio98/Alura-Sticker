@@ -1,12 +1,12 @@
 package edu.joseph.entites;
 
-public class Filmes {
-	
+public class Movie {
+
 	private String title;
 	private String image;
 	private String imDbRating;
-	
-	public Filmes(String title, String image, String imDbRating) {
+
+	public Movie(String title, String image, String imDbRating) {
 		this.title = title;
 		this.image = image;
 		this.imDbRating = imDbRating;
@@ -38,10 +38,9 @@ public class Filmes {
 
 	@Override
 	public String toString() {
-		return "Title: " + title + "\n"
-				+ "Image: " + image + "\n"
-				+ "ImDbRating=" + imDbRating;
+		return "\u001b[1mTitle:\u001b[m " + title + "\n" 
+				+ "\u001b[1mImage:\u001b[m " + image + "\n" 
+				+ "\u001b[1mImDbRating:\u001b[m " + imDbRating;
 	}
-	
-	
+
 }
