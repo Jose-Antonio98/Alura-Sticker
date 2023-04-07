@@ -29,8 +29,8 @@ public class ConsumingAPI {
 
 	public void choiceAPI(String choice) {
 		if (choice.equals("y")) {
-			reader.readOptions("C:\\Users\\josea\\OneDrive\\Documentos" + "\\WorkSpace java\\imersao-java-alura-aula01"
-					+ "\\entrada padrão\\rankingDeFilmes.txt");
+			reader.readOptions(
+					"C:\\Users\\josea\\OneDrive\\Documentos\\WorkSpace java\\alura-sticker\\entrada padrão\\rankingDeFilmes.txt");
 		} else if (choice.equals("n")) {
 			System.out.print("Enter with url: ");
 			String url = readData();

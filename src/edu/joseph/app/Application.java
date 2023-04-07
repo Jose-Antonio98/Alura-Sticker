@@ -26,29 +26,29 @@ public class Application {
 
 				switch (answer) {
 
-				case "1":
-				case "2":
-				case "3":
-					api.usingAPI(Integer.parseInt(answer));
-					break;
-				case "4":
-					System.out.print("Enter the number of the item you want to use: ");
-					String item = api.readData();
-					System.out.print("Enter the file name: ");
-					String fileName = api.readData();
-					if (api.generetSticker(Integer.parseInt(item), fileName)) {
-						System.out.println("Sticker generated successfully");
-						System.out.println();
-					} else {
-						System.out.println("An unexpected error occurred, please try again");
-					}
-					break;
-				case "5":
-					System.out.println("Application closed.");
-					System.exit(0);
-				default:
-					System.out.println("Invalid option.");
-					break;
+					case "1":
+					case "2":
+					case "3":
+						api.usingAPI(Integer.parseInt(answer));
+						break;
+					case "4":
+						System.out.print("Enter the number of the item you want to use: ");
+						String item = api.readData();
+						System.out.print("Enter the file name: ");
+						String fileName = api.readData();
+						if (api.generetSticker(Integer.parseInt(item), fileName)) {
+							System.out.println("Sticker generated successfully");
+							System.out.println();
+						} else {
+							System.out.println("An unexpected error occurred, please try again");
+						}
+						break;
+					case "5":
+						System.out.println("Application closed.");
+						System.exit(0);
+					default:
+						System.out.println("Invalid option.");
+						break;
 				}
 			}
 		} else if (option.equals("n")) {
